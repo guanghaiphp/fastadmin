@@ -3,3 +3,4 @@
 runtime/
 LICENSE
 think
+application/database.php
