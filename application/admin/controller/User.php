@@ -69,11 +69,6 @@ class User extends Backend
     }
 
     /**
-     * 添加
-     */
-
-
-    /**
      * 修改
      */
     public function edit($ids = NULL)
