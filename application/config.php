@@ -10,6 +10,16 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 use think\Env;
+use \think\Request;
+
+
+$basename = Request::instance()->root();
+
+if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
+
+    $basename = dirname($basename);
+
+}
 
 return [
     // +----------------------------------------------------------------------

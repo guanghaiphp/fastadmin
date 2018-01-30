@@ -47,6 +47,8 @@ class Archives extends Base
         {
             $archives = array_merge($archives->toArray(), $addon);
         }
+//        var_dump($archives);exit;
+//        var_dump($channel);exit;
         $this->view->assign("__ARCHIVES__", $archives);
         $this->view->assign("__CHANNEL__", $channel);
         Config::set('cms.title', $archives['title']);

@@ -8,6 +8,9 @@ use think\addons\Controller;
 use think\Cookie;
 use think\Session;
 use think\Validate;
+use addons\user\model\UserAccount;
+use addons\cms\model\PromotionUrl;
+use addons\cms\model\PromotionRecord;
 
 /**
  * 会员中心
@@ -34,7 +37,41 @@ class Index extends Controller
         $this->auth = Auth::instance();
         $this->auth->init();
         $this->user = $this->auth->getModel();
+        $this->user->account = 0;
+        $this->user->freeze_money = 0.00;
+        $this->user->wait_money = 0.00;
+        $this->user->status = 1;
+        $this->user->url_count = 0;
+        $this->user->record_count = 0;
+        //用户登陆后自定义查询用户信息
+        if(isset($this->user->id)&&!empty($this->user->id)){
+            //用户收益情况
+            $userAaccount = UserAccount::getUserAccountByUserId($this->user->id);
+            if(!empty($userAaccount)){
+                $this->user->account = number_format($userAaccount['account'],2);
+                $this->user->freeze_money = number_format($userAaccount['freeze_money'],2);
+                $this->user->wait_money = number_format($userAaccount['wait_money'],2);
+                $this->user->status = $userAaccount['status'];
+            }
+            //推广链接
+            $urldata = [
+                'user_id' =>(int)$this->user->id,
+            ];
+            $promotionData = PromotionUrl::all($urldata);
+            if(!empty($promotionData)){
+                $this->user->url_count = count($promotionData);
+            }
+            //收益详情
+            $recordData = [
+                'user_id' =>(int)$this->user->id,
+            ];
+            $recordata = PromotionRecord::all($recordData);
+            if(!empty($recordata)){
+                $this->user->record_count = count($recordata);
+            }
+        }
         $this->view->assign('user', $this->user);
+
     }
 
     public function index()

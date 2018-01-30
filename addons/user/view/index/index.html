@@ -14,6 +14,16 @@
                                 你好！{$user.nickname}<br />
                                 Lv:{$user->level}
                             </p>
+
+                            <p>
+                                收益：{$user.account} 元<br />
+                            </p>
+                            <p>
+                                冻结：{$user.freeze_money} 元<br />
+                            </p>
+                            <p>
+                                待收：{$user.wait_money} 元<br />
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -22,12 +32,12 @@
                                 <i class="fa fa-user-o"></i> 修改密码
                             </a>
                             <a href="#" class="list-group-item">
-                                <span class="badge">2</span>
-                                <i class="fa fa-comment"></i> 我发表的帖子
+                                <span class="badge">{$user.url_count}</span>
+                                <i class="fa fa-comment"></i> 我的推广
                             </a>
                             <a href="#" class="list-group-item">
-                                <span class="badge">1</span>
-                                <i class="fa fa-comment-o"></i> 我发表的主题
+                                <span class="badge">{$user.record_count}</span>
+                                <i class="fa fa-comment-o"></i> 收益记录
                             </a>
                         </div>
                     </div>

@@ -7,6 +7,7 @@ use think\Model;
 /**
  * 会员模型
  */
+
 class User Extends Model
 {
 
