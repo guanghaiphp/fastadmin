@@ -74,7 +74,6 @@ class PromotionBusiness
         //2、添加此用户的推广操作日志
         $type = 'add';
         $addUserLog = UserLog::addUserLog($advertId, $userId, $type);
-
         if(!$addUrl || !$addUserLog){
             Db::rollback();
             return \json('生成推广链接失败，请稍后重试！');

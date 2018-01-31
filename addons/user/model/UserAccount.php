@@ -60,5 +60,4 @@ class UserAccount Extends Model
     {
         return UserAccount::get(['user_id'=>$userId]);
     }
-
 }

@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: 75763
- * Date: 2018/1/29
- * Time: 16:50
+ * Date: 2018/1/31
+ * Time: 10:58
  */
 namespace addons\cms\model;
 
@@ -12,14 +12,14 @@ use think\Model;
 /**
  * 推广记录（生成和查询）
  */
-class PromotionRecord Extends Model
+class Advertising Extends Model
 {
-    protected $name = "promotion_record";
+    protected $name = "advertising";
     // 开启自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
     // 定义时间戳字段名
-    protected $createTime = 'create_time';
-    protected $updateTime = 'update_time';
+    protected $createTime = 'createtime';
+    protected $updateTime = 'updatetime';
 
     // 追加属性
     protected $append = [
@@ -33,4 +33,6 @@ class PromotionRecord Extends Model
         $config = get_addon_config('cms');
         self::$config = $config;
     }
+
+
 }
