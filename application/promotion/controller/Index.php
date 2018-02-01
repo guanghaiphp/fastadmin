@@ -5,7 +5,6 @@ use app\promotion\controller\PromotionBase;
 
 use think\Db;
 use addons\cms\model\Archives as ArchivesModel;
-use addons\cms\model\Advertising;
 use addons\user\model\UserAccount;
 use addons\user\model\User;
 use think\Config;
@@ -58,7 +57,7 @@ class Index extends PromotionBase
             //正常情况
             //查看推广记录生成与否
             $isRecode = PromotionRecord::get($data);
-            $advertData = Advertising::get(['advert_id' => $advertId]);
+            $advertData = ArchivesModel::get($advertId);
             //无此纪录
             if(!$isRecode){
                 $data['type'] = 'add';

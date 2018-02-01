@@ -10,7 +10,7 @@ namespace addons\cms\model;
 use think\Model;
 
 /**
- * 推广记录（生成和查询）
+ * 推广记录（生成和查询）  //废弃
  */
 class Advertising Extends Model
 {
