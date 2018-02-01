@@ -33,6 +33,4 @@ class Advertising Extends Model
         $config = get_addon_config('cms');
         self::$config = $config;
     }
-
-
 }
