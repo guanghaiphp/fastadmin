@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0429e054-33a3-4830-bc0a-6ee8665cabc4" name="默认" comment="推广的生成流程完善">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/user/controller/UserPromotion.php" />
+    <list default="true" id="0429e054-33a3-4830-bc0a-6ee8665cabc4" name="默认" comment="广告生成、推广链接验证生成">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/cms/controller/Promotion.php" afterPath="$PROJECT_DIR$/addons/cms/controller/Promotion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/cms/library/PromotionBusiness.php" afterPath="$PROJECT_DIR$/addons/cms/library/PromotionBusiness.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/cms/view/default/show_advertising.html" afterPath="$PROJECT_DIR$/addons/cms/view/default/show_advertising.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/user/application/admin/controller/User.php" afterPath="$PROJECT_DIR$/addons/user/application/admin/controller/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php" afterPath="$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Archives.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Archives.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="119" column="29" lean-forward="false" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+            <state relative-caret-position="501">
+              <caret line="306" column="55" lean-forward="false" selection-start-line="306" selection-start-column="55" selection-end-line="306" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -72,8 +68,18 @@
       <file leaf-file-name="show_advertising.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_advertising.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="109" column="44" lean-forward="false" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
+            <state relative-caret-position="349">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_product.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="49" column="26" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -119,16 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Archives.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/validate/Archives.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>投过</find>
       <find>a</find>
       <find>ap</find>
       <find>app、</find>
@@ -170,6 +165,7 @@
       <find>未找到zhi'ding</find>
       <find>未找到指定</find>
       <find>No specified channel found</find>
+      <find>productdata</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -195,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/common/behavior/Common.php" />
         <option value="$PROJECT_DIR$/addons/cms/controller/Index.php" />
         <option value="$PROJECT_DIR$/addons/cms/view/default/common/layout.html" />
         <option value="$PROJECT_DIR$/public/admin.php" />
@@ -212,7 +207,6 @@
         <option value="$PROJECT_DIR$/addons/user/model/User.php" />
         <option value="$PROJECT_DIR$/addons/user/view/layout/common.html" />
         <option value="$PROJECT_DIR$/addons/cms/model/Archives.php" />
-        <option value="$PROJECT_DIR$/addons/cms/view/default/show_product.html" />
         <option value="$PROJECT_DIR$/addons/promotion/controller/Index.php" />
         <option value="$PROJECT_DIR$/addons/example/install.sql" />
         <option value="$PROJECT_DIR$/addons/promotion/controller/BasePromotion.php" />
@@ -246,6 +240,8 @@
         <option value="$PROJECT_DIR$/addons/user/application/admin/controller/User.php" />
         <option value="$PROJECT_DIR$/addons/cms/controller/Promotion.php" />
         <option value="$PROJECT_DIR$/addons/cms/library/PromotionBusiness.php" />
+        <option value="$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php" />
+        <option value="$PROJECT_DIR$/addons/cms/view/default/show_product.html" />
       </list>
     </option>
   </component>
@@ -375,46 +371,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="addons" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -455,7 +411,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,17 +433,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\application" />
-      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\promotion\controller" />
-      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\promotion" />
-      <recent name="E:\phpstudy\PHPTutorial\WWW\guanggao.com\application\admin\view\user" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\cms\view\default" />
       <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\promotion" />
       <recent name="E:\phpstudy\PHPTutorial\WWW\guanggao.com\application\admin\model" />
       <recent name="E:\phpstudy\PHPTutorial\WWW\guanggao.com\application\admin\model\cms" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\application" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\promotion\controller" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xiangmu\fastadmin\addons\promotion" />
+      <recent name="E:\phpstudy\PHPTutorial\WWW\guanggao.com\application\admin\view\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -590,7 +550,7 @@
       <workItem from="1517193878999" duration="22071000" />
       <workItem from="1517278177412" duration="22959000" />
       <workItem from="1517363332172" duration="11546000" />
-      <workItem from="1517450413876" duration="2797000" />
+      <workItem from="1517450413876" duration="4261000" />
     </task>
     <task id="LOCAL-00001" summary="cms 个人中心">
       <created>1516765824696</created>
@@ -620,11 +580,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517377111609</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="广告生成、推广链接验证生成">
+      <created>1517453287676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517453287676</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135081000" />
+    <option name="totallyTimeSpent" value="136545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -695,20 +662,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cms 个人中心" />
     <MESSAGE value="推广的生成流程完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="推广的生成流程完善" />
+    <MESSAGE value="广告生成、推广链接验证生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="广告生成、推广链接验证生成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/promotion/controller/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/promotion/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1018,14 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_advertising.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="109" column="44" lean-forward="false" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/user/application/admin/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1104,8 +1057,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="119" column="29" lean-forward="false" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+        <state relative-caret-position="501">
+          <caret line="306" column="55" lean-forward="false" selection-start-line="306" selection-start-column="55" selection-end-line="306" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_advertising.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="49" column="26" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
           <folding />
         </state>
       </provider>

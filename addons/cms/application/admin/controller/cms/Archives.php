@@ -77,17 +77,15 @@ class Archives extends Backend
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
-
             $list = $this->model
                     ->with('Channel')
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
-
             $result = array("total" => $total, "rows" => $list);
 
-            return json($result);
+//            return json($result);
         }
         return $this->view->fetch();
     }
