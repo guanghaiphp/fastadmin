@@ -51,7 +51,6 @@ class User extends Backend
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
-
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

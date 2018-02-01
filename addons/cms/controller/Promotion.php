@@ -34,8 +34,8 @@ class Promotion extends Base
         $this->auth = Auth::instance();
 
         $isLogin = $this->auth->isLogin();
-        if($isLogin=='null'){
-            return $this->view->fetch();
+        if(!$isLogin){
+            return json('请点击个人中心进行登陆！');
         }
     }
 
@@ -54,7 +54,7 @@ class Promotion extends Base
             $this->auth->init();
             $isLogin = $this->auth->isLogin();
             if(!$isLogin){
-                return json($isLogin);
+                return json('请点击个人中心进行登陆！');
             }
             $advertId = $this->request->post('id');
             $archives = ArchivesModel::get($advertId);
@@ -65,15 +65,13 @@ class Promotion extends Base
             $userinfo = User::get($this->auth->id);
             //生成我的推广链接
             //生成规则暂时按照用户id 和广告id和推广人昵称
-//            $userCode = urlencode(base64_encode('promoterId' . $this->auth->id));
             $userId = urlencode(base64_encode('promoterId' . $this->auth->id));
-//            $userId = HelperTools::authcode($userCode,',',time(),'ENCODE');
             $url = Config::get('app_host');
             $url.="/promotion/index";
             $url.="?advertId=".$advertId;
             $url.="&u=".$userId;
             $url.="&n=".$userinfo->nickname;
-            return PromotionBusiness::addPromotionUrl($advertId, $userinfo->id, $url);
+            return PromotionBusiness::addPromotionUrl($advertId, $this->auth->id, $url);
         }
     }
     /**
