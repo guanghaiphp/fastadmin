@@ -1,54 +1,212 @@
+<link href="/assets/css/frontend.css" rel="stylesheet">
+<style>
+    h2.page-header {
+        margin:10px 0  25px 0;
+        padding-bottom:15px;
+    }
+    .user-baseinfo {
+        margin-bottom:25px;
+    }
+    .user-baseinfo table tr td {color:#999;}
+    .user-dashboard{
+        margin:0px;
+        padding:0;
+    }
+    .user-dashboard .counter-item {
+        max-width: 360px;
+        margin: 20px auto;
+    }
+    .user-dashboard i {
+        width: 75px;
+        height: 75px;
+        line-height: 73px;
+        font-size: 35px;
+        text-align: center;
+        border-radius: 50%;
+        float: left;
+        border:1px solid #ddd;
+    }
+    .user-dashboard h4,
+    .user-dashboard p { margin-left: 90px; }
+    .user-dashboard h4 {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 50px;
+        color:#444;
+        font-family:Helvetica, Arial;
+    }
+    .user-dashboard h4 small {
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 14px;
+        font-weight:400;
+        text-transform: uppercase;
+        color:#777;
+    }
+    .user-dashboard p {
+        color:#999;
+    }
+    @media (min-width: 767px) {
+        .user-center .avatar-text,.user-center .avatar-img {
+            height:150px;width:150px;border-radius: 150px;line-height:150px;font-size:70px;
+        }
+        .user-center .avatar-img  {font-size:0;}
+        .user-center .avatar-img img {
+            height:150px;width:150px;border-radius:150px;
+        }
+    }
+</style>
 <div class="container">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="page-header" style="margin-top:10px;">
-                <h4>会员中心</h4>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    {if $user->check()}
-                    <div class="alert alert-dismissable bg-gray-light clearfix">
-                        <div class="pull-left"><img class="img-responsive img-circle" style="width:80px;" src="/assets/img/avatar.png" /></div>
-                        <div class="pull-left text-left" style="margin-left:15px;">
-                            <p>
-                                你好！{$user.nickname}<br />
-                                Lv:{$user->level}
-                            </p>
+        <div class="row">
+            {if $user->check()}
+            <div class="col-md-3">
 
-                            <p>
-                                收益：{$user.account} 元<br />
-                            </p>
-                            <p>
-                                冻结：{$user.freeze_money} 元<br />
-                            </p>
-                            <p>
-                                待收：{$user.wait_money} 元<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="list-group">
-                            <a href="{:addon_url('user/index/changepwd')}" class="list-group-item">
-                                <i class="fa fa-user-o"></i> 修改密码
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <span class="badge">{$user.url_count}</span>
-                                <i class="fa fa-comment"></i> 我的推广
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <span class="badge">{$user.record_count}</span>
-                                <i class="fa fa-comment-o"></i> 收益记录
-                            </a>
-                        </div>
-                    </div>
+                <div class="sidenav">
+                    <ul class="list-group">
+                        <li class="list-group-heading">个人中心</li>
+                        <li class="list-group-item active"> <a href="/user/index.html"><i class="fa fa-user-circle"></i> 会员中心</a> </li>
+                        <li class="list-group-item "> <a href="{$user.url_count}"><i class="fa fa-cloud-upload"></i> 我的推广</a> </li>
+                        <li class="list-group-item "> <a href="{$user.record_count}"><i class="fa fa-money"></i> 收益记录</a> </li>
+                        <!--<li class="list-group-item "> <a href="/user/myvideo.html"><i class="fa fa-money"></i> 我购买的视频</a> </li>
+                        <li class="list-group-item "> <a href="/user/invite.html"><i class="fa fa-share-alt"></i> 邀请好友</a> </li>
+                        <li class="list-group-item "> <a href="/user/signin.html"><i class="fa fa-map-signs"></i> 我的签到</a> </li>-->
+                        <li class="list-group-item "> <a href="{:addon_url('user/index/changepwd')}"><i class="fa fa-key"></i> 修改密码</a> </li>
+                        <li class="list-group-item "> <a href="{:addon_url('user/index/logout')}"><i class="fa fa-user-o"></i> 注销登录</a> </li>
 
-                    <a class="btn btn-danger btn-block" href="{:addon_url('user/index/logout')}"><i class="fa fa-user"></i> 立即注销</a>
-                    {else/}
-                    <a class="btn btn-info btn-block" href="{:addon_url('user/index/register')}"><i class="fa fa-user"></i> 立即注册</a>
-                    <a class="btn btn-success btn-block" href="{:addon_url('user/index/login')}"><i class="fa fa-user"></i> 立即登录</a>
-                    {/if}
+                    </ul>
                 </div>
             </div>
+            <div class="col-md-9">
+                <div class="panel panel-default ">
+                    <div class="panel-body">
+                        <h2 class="page-header">会员中心</h2>
+                        <div class="row user-baseinfo">
+                            <div class="col-md-3 col-sm-3 col-xs-2 text-center user-center">
+                                <a href="#" title="点击修改头像" target="_blank"><span class="avatar-text" style="background-color: rgb(209,229,160);" data-username="{$user.nickname}">{$user.nickname}</span></a>
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-xs-10">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <!-- Heading -->
+                                    <h4><a href="#" title="点击修改用户名" target="_self">{$user.nickname}</a></h4>
+                                    <!-- Paragraph -->
+                                    <p><a href="#" title="点击修改签名" target="_self">这个人很懒,啥也没写</a></p>
+                                    <!-- Success -->
+                                    <div style="margin-top:15px;">
+                                        <table class="table">
+                                            <tbody>
+                                            <tr>
+                                                <th>VIP</th>
+                                                <td><a href="/service.html" title="查看VIP等级介绍">0</a></td>
+
+                                                <th>收益</th>
+                                                <td><a href="javascript:;" title="查看余额说明" class="viewscore">{$user.account} 元</a></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>冻结金额</th>
+                                                <td><a href="javascript:;" title="查看余额说明" class="viewbalance">{$user.freeze_money} 元</a></td>
+                                                <th>待收款额</th>
+                                                <td><a href="javascript:;" title="查看等级升级说明" class="viewlv">{$user.wait_money} 元</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>本次登录</th>
+                                                <td>2018-02-01 13:46:38</td>
+                                                <th>上次登录</th>
+                                                <td>2018-01-23 16:31:13</td>
+                                            </tr>
+                                            </tbody></table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-0 col-pad">
+                                <a href="#" class="btn btn-success hidden-xs" target="_blank"><i class="fa fa-pencil"></i> 修改资料</a>
+                            </div>
+                        </div>
+                        <h2 class="page-header">统计数据</h2>
+                        <!--<div class="row user-dashboard">
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-trophy text-danger"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="1" data-speed="2000" data-refresh-interval="50">1</span><small>主题</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>你在社区发表的主题数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-coffee text-info"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="8" data-speed="2000" data-refresh-interval="50">8</span><small>回帖</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>你在社区回复帖子的数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-gift text-fuchsia"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="0" data-speed="2000" data-refresh-interval="50">0</span><small>最佳</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>社区发表最佳回帖数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-calendar-check-o text-success"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="3" data-speed="2000" data-refresh-interval="50">3</span><small>签到</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>你在官网的签到次数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-thumbs-up text-warning"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="0" data-speed="2000" data-refresh-interval="50">0</span><small>点赞</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>你在社区对他人的帖子点赞次数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                &lt;!&ndash; counter item &ndash;&gt;
+                                <div class="counter-item">
+                                    &lt;!&ndash; icon &ndash;&gt;
+                                    <i class="fa fa-share-alt text-purple"></i>
+                                    &lt;!&ndash; Heading &ndash;&gt;
+                                    <h4><span class="number-count" data-from="0" data-to="0" data-speed="2000" data-refresh-interval="50">0</span><small>邀请</small></h4>
+                                    &lt;!&ndash; Paragraph &ndash;&gt;
+                                    <p>你邀请好友加入的人数</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            {else/}
+            <a class="btn btn-info btn-block" href="{:addon_url('user/index/register')}"><i class="fa fa-user"></i> 立即注册</a>
+            <a class="btn btn-success btn-block" href="{:addon_url('user/index/login')}"><i class="fa fa-user"></i> 立即登录</a>
+            {/if}
         </div>
-    </div>
 </div>
