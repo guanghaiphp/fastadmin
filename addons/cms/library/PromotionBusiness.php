@@ -60,11 +60,9 @@ class PromotionBusiness
         $data = [
             'user_id' => (int)$userId,
             'advert_id' => (int)$advertId,
-//            'promotion_url' => (string)$promotionUrl
         ];
         //验证是否添加过此广告的链接
         $isHave = PromotionUrl::get($data);
-//        var_dump(Db::table("promotion_url")->getLastSql());exit;
         if(!empty($isHave)){
             return \json('此推广链接已经存在,请前往个人中心查看！');
         }

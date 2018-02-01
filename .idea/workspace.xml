@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0429e054-33a3-4830-bc0a-6ee8665cabc4" name="默认" comment="广告生成、推广链接验证生成" />
+=======
+    <list default="true" id="0429e054-33a3-4830-bc0a-6ee8665cabc4" name="默认" comment="废弃广告管理">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/cms/model/Advertising.php" afterPath="$PROJECT_DIR$/addons/cms/model/Advertising.php" />
+    </list>
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +25,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/addons/user/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-625">
@@ -25,11 +33,20 @@
               <folding>
                 <element signature="e#42#71#0#PHP" expanded="true" />
                 <marker date="1517455188940" expanded="true" signature="2157:2163" ph="{...}" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/promotion/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+              <folding>
+                <element signature="e#43#86#0#PHP" expanded="true" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/user/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,10 +58,19 @@
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+              <folding />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="frontend.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/css/frontend.min.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,46 +82,120 @@
                 <element signature="e#276175#276962#2" expanded="true" />
                 <element signature="e#277022#277509#2" expanded="true" />
                 <element signature="e#277569#278284#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/user/view/layout/common.html">
+=======
+      <file leaf-file-name="show_advertising.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_advertising.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="110" column="37" lean-forward="true" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Archives.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4480">
+              <caret line="308" column="12" lean-forward="false" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Archives.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/controller/Archives.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-759">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Advertising.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/model/Advertising.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/user/view/layout/common.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+=======
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/user/view/index/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="Promotion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/controller/Promotion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+              <folding>
+                <element signature="e#41#88#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/user/view/index/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-505">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="UserLog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/cms/model/UserLog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/user/application/admin/controller/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1300">
               <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+=======
+      <file leaf-file-name="UserPromotion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/user/controller/UserPromotion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
               <folding />
             </state>
           </provider>
@@ -204,22 +304,25 @@
         <option value="$PROJECT_DIR$/addons/cms/model/PromotionRecord.php" />
         <option value="$PROJECT_DIR$/addons/cms/model/Adverting.php" />
         <option value="$PROJECT_DIR$/addons/cms/model/Advertsing.php" />
-        <option value="$PROJECT_DIR$/addons/cms/model/Advertising.php" />
         <option value="$PROJECT_DIR$/addons/user/model/UserAccount.php" />
         <option value="$PROJECT_DIR$/addons/cms/config.php" />
-        <option value="$PROJECT_DIR$/application/promotion/controller/Index.php" />
-        <option value="$PROJECT_DIR$/addons/cms/view/default/show_advertising.html" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/addons/user/application/admin/controller/User.php" />
         <option value="$PROJECT_DIR$/addons/cms/controller/Promotion.php" />
-        <option value="$PROJECT_DIR$/addons/cms/library/PromotionBusiness.php" />
         <option value="$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php" />
         <option value="$PROJECT_DIR$/addons/cms/view/default/show_product.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/addons/user/view/layout/common.html" />
         <option value="$PROJECT_DIR$/addons/ucenter/uc.php" />
         <option value="$PROJECT_DIR$/addons/user/public/assets/frontend.css" />
         <option value="$PROJECT_DIR$/addons/user/public/assets/css/frontend.css" />
         <option value="$PROJECT_DIR$/addons/user/view/index/index.html" />
+=======
+        <option value="$PROJECT_DIR$/addons/cms/library/PromotionBusiness.php" />
+        <option value="$PROJECT_DIR$/application/promotion/controller/Index.php" />
+        <option value="$PROJECT_DIR$/addons/cms/view/default/show_advertising.html" />
+        <option value="$PROJECT_DIR$/addons/cms/model/Advertising.php" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
       </list>
     </option>
   </component>
@@ -286,6 +389,7 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
           <expand>
             <path>
               <item name="guanggao.com" type="b2602c69:ProjectViewProjectNode" />
@@ -334,6 +438,188 @@
             </path>
           </expand>
           <select />
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="promotion" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="promotion" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastadmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -465,7 +751,7 @@
       <workItem from="1517193878999" duration="22071000" />
       <workItem from="1517278177412" duration="22959000" />
       <workItem from="1517363332172" duration="11546000" />
-      <workItem from="1517450413876" duration="4261000" />
+      <workItem from="1517450413876" duration="7683000" />
     </task>
     <task id="LOCAL-00001" summary="cms 个人中心">
       <created>1516765824696</created>
@@ -502,18 +788,35 @@
       <option name="project" value="LOCAL" />
       <updated>1517453287676</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="废弃广告管理">
+      <created>1517462573209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1517462573209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="142863000" />
+=======
+    <option name="totallyTimeSpent" value="139967000" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121535" sideWeight="0.4960894" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23072916" sideWeight="0.4960894" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -585,13 +888,15 @@
     <MESSAGE value="cms 个人中心" />
     <MESSAGE value="推广的生成流程完善" />
     <MESSAGE value="广告生成、推广链接验证生成" />
-    <option name="LAST_COMMIT_MESSAGE" value="广告生成、推广链接验证生成" />
+    <MESSAGE value="废弃广告管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="废弃广告管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/cms/model/Advertising.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -631,6 +936,9 @@
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
+=======
+    <entry file="file://$PROJECT_DIR$/application/admin/behavior/AdminLog.php">
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
           <caret line="258" column="6" lean-forward="false" selection-start-line="258" selection-start-column="6" selection-end-line="258" selection-end-column="6" />
@@ -639,8 +947,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/db/Query.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="282">
           <caret line="944" column="20" lean-forward="false" selection-start-line="944" selection-start-column="20" selection-end-line="944" selection-end-column="20" />
+=======
+        <state relative-caret-position="604">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
           <folding />
         </state>
       </provider>
@@ -671,6 +984,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,8 +1011,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/cms/config.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="478">
           <caret line="141" column="48" lean-forward="false" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
+=======
+        <state relative-caret-position="391">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#123#140#0#PHP" expanded="true" />
+          </folding>
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
         </state>
       </provider>
     </entry>
@@ -718,6 +1040,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/user/application/admin/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -727,6 +1050,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+=======
+        <state relative-caret-position="667">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
           <folding />
         </state>
       </provider>
@@ -824,6 +1151,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/user/application/admin/view/user/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2180">
@@ -841,6 +1169,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/user/application/admin/view/user/index.html">
+=======
+    <entry file="file://$PROJECT_DIR$/application/admin/view/advertising/index.html">
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -872,6 +1203,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ucenter/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9155">
@@ -897,6 +1229,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/user/application/admin/controller/User.php">
+=======
+    <entry file="file://$PROJECT_DIR$/application/admin/validate/Archives.php">
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
@@ -952,6 +1287,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/assets/css/frontend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1321">
@@ -965,13 +1301,49 @@
             <marker date="1517469996738" expanded="true" signature="276962:276993" ph="{...}" />
             <marker date="1517469996738" expanded="true" signature="289466:289490" ph="{...}" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/addons/cms/lang/zh-cn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="49" column="26" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/frontend.min.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="25">
           <caret line="0" column="107" lean-forward="false" selection-start-line="0" selection-start-column="107" selection-end-line="0" selection-end-column="107" />
+=======
+        <state relative-caret-position="535">
+          <caret line="74" column="37" lean-forward="false" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
           <folding>
             <element signature="e#153691#155006#2" expanded="true" />
             <element signature="e#275370#276117#2" expanded="true" />
@@ -982,6 +1354,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/user/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-625">
@@ -1003,6 +1376,99 @@
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/addons/cms/model/UserLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/user/controller/UserPromotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/application/admin/controller/cms/Archives.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4480">
+          <caret line="308" column="12" lean-forward="false" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/controller/Archives.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/view/default/show_advertising.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="110" column="37" lean-forward="true" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/controller/Promotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="e#41#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/promotion/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+          <folding>
+            <element signature="e#43#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/karsonzhang/fastadmin-addons/src/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="275" column="9" lean-forward="false" selection-start-line="275" selection-start-column="9" selection-end-line="275" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/cms/model/Advertising.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+>>>>>>> d2c26b1db23931abb76b362a43b35f0a96cecbfd
         </state>
       </provider>
     </entry>
