@@ -106,7 +106,7 @@ define(['jquery', 'bootstrap', 'backend', 'addtabs', 'table', 'echarts', 'echart
             });
 
             //读取FastAdmin的更新信息
-            $.ajax({
+            /*$.ajax({
                 url: Config.fastadmin.api_url + '/news/index',
                 type: 'post',
                 dataType: 'jsonp',
@@ -121,7 +121,7 @@ define(['jquery', 'bootstrap', 'backend', 'addtabs', 'table', 'echarts', 'echart
                 success: function (ret) {
                     $("#discussion-list").html(Template("discussiontpl", {news: ret.discussionlist.slice(0,6)}));
                 }
-            });
+            });*/
         }
     };
 
