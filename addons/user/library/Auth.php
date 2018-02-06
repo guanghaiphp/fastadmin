@@ -250,7 +250,7 @@ class Auth
             }
             $salt = Random::alnum();
             $newpassword = $this->getEncryptPassword($newpassword, $salt);
-            $this->_user->save(['password' => $newpassword, 'salt' => $salt]);
+            $this->_user->save(['password' => $newpassword, 'salt' => $salt, 'status' => 'normal']);
 
             return true;
         }
