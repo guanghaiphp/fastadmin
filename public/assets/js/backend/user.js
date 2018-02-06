@@ -35,7 +35,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                 return value == '1' ? __('Male') : __('Female');
                             }},
                         {field: 'birthday', title: __('Birthday')},
-                        {field: 'paymentaccount', title: __('paymentaccount')},
+                        {field: 'paymentmethod', title: __('paymentmethod')},
+                        {field: 'accountnumber', title: __('accountnumber')},
+                        {field: 'realname', title: __('realname')},
+                        {field: 'wait_money', title: __('wait_money')},
+                        {field: 'account', title: __('account')},
+                        {field: 'freeze_money', title: __('freeze_money')},
                         {field: 'score', title: __('Score')},
                         {field: 'prevtime', title: __('Prevtime'), operate: false, visible: false, formatter: Table.api.formatter.datetime},
                         {field: 'loginfailure', title: __('Loginfailure'), visible: false},

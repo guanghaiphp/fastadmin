@@ -67,12 +67,9 @@
                 <div class="sidenav">
                     <ul class="list-group">
                         <li class="list-group-heading">个人中心</li>
-                        <li class="list-group-item active"> <a href="/user/index.html"><i class="fa fa-user-circle"></i> 会员中心</a> </li>
-                        <li class="list-group-item "> <a href="{$user.url_count}"><i class="fa fa-cloud-upload"></i> 我的推广</a> </li>
-                        <li class="list-group-item "> <a href="{$user.record_count}"><i class="fa fa-money"></i> 收益记录</a> </li>
-                        <!--<li class="list-group-item "> <a href="/user/myvideo.html"><i class="fa fa-money"></i> 我购买的视频</a> </li>
-                        <li class="list-group-item "> <a href="/user/invite.html"><i class="fa fa-share-alt"></i> 邀请好友</a> </li>
-                        <li class="list-group-item "> <a href="/user/signin.html"><i class="fa fa-map-signs"></i> 我的签到</a> </li>-->
+                        <li class="list-group-item active"> <a href="/user.html"><i class="fa fa-user-circle"></i> 会员中心</a> </li>
+                        <li class="list-group-item"> <a href="{:addon_url('user/index/PromotionUrl')}"><i class="fa fa-cloud-upload"></i> 我的推广</a> </li>
+                        <li class="list-group-item "> <a href="{:addon_url('user/index/PromotionRecord')}"><i class="fa fa-money"></i> 收益记录</a> </li>
                         <li class="list-group-item "> <a href="{:addon_url('user/index/changepwd')}"><i class="fa fa-key"></i> 修改密码</a> </li>
                         <li class="list-group-item "> <a href="{:addon_url('user/index/logout')}"><i class="fa fa-user-o"></i> 注销登录</a> </li>
 
@@ -110,7 +107,7 @@
                                                 <th>冻结金额</th>
                                                 <td><a href="javascript:;" title="查看余额说明" class="viewbalance">{$user.freeze_money} 元</a></td>
                                                 <th>待收款额</th>
-                                                <td><a href="javascript:;" title="查看等级升级说明" class="viewlv">{$user.wait_money} 元</a></td>
+                                                <td><a href="javascript:;" title="查看等级升级说明" class="viewlv">{$user.wait_money?$user.wait_money : '0.00'} 元</a></td>
                                             </tr>
                                             <tr>
                                                 <th>本次登录</th>
@@ -122,11 +119,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-sm-2 col-xs-0 col-pad">
+                            <!--<div class="col-md-2 col-sm-2 col-xs-0 col-pad">
                                 <a href="#" class="btn btn-success hidden-xs" target="_blank"><i class="fa fa-pencil"></i> 修改资料</a>
-                            </div>
+                            </div>-->
                         </div>
-                        <h2 class="page-header">统计数据</h2>
                         <!--<div class="row user-dashboard">
                             <div class="col-md-4 col-sm-6">
                                 &lt;!&ndash; counter item &ndash;&gt;

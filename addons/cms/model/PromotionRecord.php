@@ -17,6 +17,10 @@ class PromotionRecord Extends Model
     protected $name = "promotion_record";
     // 开启自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
+    protected $type = [
+        'create_time'  =>  'datetime',
+        'delete_time'  =>  'datetime',
+    ];
     // 定义时间戳字段名
     protected $createTime = 'create_time';
     protected $updateTime = 'update_time';

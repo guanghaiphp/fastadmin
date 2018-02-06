@@ -1,0 +1,158 @@
+<link href="/assets/css/frontend.css" rel="stylesheet">
+<style>
+    h2.page-header {
+        margin:10px 0  25px 0;
+        padding-bottom:15px;
+    }
+    .user-baseinfo {
+        margin-bottom:25px;
+    }
+    .user-baseinfo table tr td {color:#999;}
+    .user-dashboard{
+        margin:0px;
+        padding:0;
+    }
+    .user-dashboard .counter-item {
+        max-width: 360px;
+        margin: 20px auto;
+    }
+    .user-dashboard i {
+        width: 75px;
+        height: 75px;
+        line-height: 73px;
+        font-size: 35px;
+        text-align: center;
+        border-radius: 50%;
+        float: left;
+        border:1px solid #ddd;
+    }
+    .user-dashboard h4,
+    .user-dashboard p { margin-left: 90px; }
+    .user-dashboard h4 {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 50px;
+        color:#444;
+        font-family:Helvetica, Arial;
+    }
+    .user-dashboard h4 small {
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 14px;
+        font-weight:400;
+        text-transform: uppercase;
+        color:#777;
+    }
+    .user-dashboard p {
+        color:#999;
+    }
+    .promotion-table th{
+        text-align: center;
+    }
+    @media (min-width: 767px) {
+        .user-center .avatar-text,.user-center .avatar-img {
+            height:150px;width:150px;border-radius: 150px;line-height:150px;font-size:70px;
+        }
+        .user-center .avatar-img  {font-size:0;}
+        .user-center .avatar-img img {
+            height:150px;width:150px;border-radius:150px;
+        }
+    }
+</style>
+<div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="sidenav">
+                    <ul class="list-group">
+                        <li class="list-group-heading">个人中心</li>
+                        <li class="list-group-item"> <a href="/user.html"><i class="fa fa-user-circle"></i> 会员中心</a> </li>
+                        <li class="list-group-item"> <a href="{:addon_url('user/index/PromotionUrl')}"><i class="fa fa-cloud-upload"></i> 我的推广</a> </li>
+                        <li class="list-group-item  active"> <a href="{:addon_url('user/index/PromotionRecord')}"><i class="fa fa-money"></i> 收益记录</a> </li>
+                        <li class="list-group-item "> <a href="{:addon_url('user/index/changepwd')}"><i class="fa fa-key"></i> 修改密码</a> </li>
+                        <li class="list-group-item "> <a href="{:addon_url('user/index/logout')}"><i class="fa fa-user-o"></i> 注销登录</a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="panel panel-default ">
+                    <div class="panel-body">
+                        <h2 class="page-header">个人收益</h2>
+                        <div class="row user-baseinfo">
+                            <div class="col-md-12 col-sm-12 col-xs-11">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <!-- Success -->
+                                    <div style="margin-top:15px;">
+                                        <table class="table">
+                                            <tbody>
+                                            <tr>
+                                                <th>VIP</th>
+                                                <td><a href="javascript:;" title="查看VIP等级介绍">0</a></td>
+
+                                                <th>收益</th>
+                                                <td><a href="javascript:;" title="查看余额说明" class="viewscore">{$user.account} 元</a></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>冻结金额</th>
+                                                <td><a href="javascript:;" title="查看余额说明" class="viewbalance">{$user.freeze_money} 元</a></td>
+                                                <th>待收款额</th>
+                                                <td><a href="javascript:;" title="查看等级升级说明" class="viewlv">{$user.wait_money? $user.wait_money: '0.00'} 元</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>本次登录</th>
+                                                <td>2018-02-01 13:46:38</td>
+                                                <th>上次登录</th>
+                                                <td>2018-01-23 16:31:13</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="page-header">统计数据</h2>
+                        <div class="row user-baseinfo">
+                            <div class="col-md-12 col-sm-12 col-xs-11">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <!-- Success -->
+                                    <div style="margin-top:15px;">
+                                        <table class="table" style="border: 1px solid #f4f4f4;">
+                                            <tbody class="promotion-table">
+                                                <tr>
+                                                    <th>名称</th>
+                                                    <th>单价</th>
+                                                    <th>点击</th>
+                                                    <th>时间</th>
+                                                    <th>收益</th>
+                                                </tr>
+
+                                                {volist name="Data" id="vo" empty="暂时没有数据" }
+                                                <tr>
+                                                    <th>{$vo.title}</th>
+                                                    <th style="color: red">{$vo.prices} 元</th>
+                                                    <th>1</th>
+                                                    <th>{:date("Y-m-d h:i:sa",$vo.create_time)}</th>
+                                                    <th>+{$vo.prices}元</th>
+                                                </tr>
+                                                {/volist}
+                                            </tbody>
+                                        </table>
+                                        {$Data->render()}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>

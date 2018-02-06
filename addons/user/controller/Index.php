@@ -6,6 +6,8 @@ use addons\user\library\Auth;
 use addons\user\model\User;
 use think\addons\Controller;
 use think\Cookie;
+use think\Db;
+use think\Request;
 use think\Session;
 use think\Validate;
 use addons\cms\model\PromotionUrl;
@@ -36,26 +38,17 @@ class Index extends Controller
         $this->auth = Auth::instance();
         $this->auth->init();
         $this->user = $this->auth->getModel();
-//        $this->user->account = 0;
-//        $this->user->freeze_money = 0.00;
-//        $this->user->wait_money = 0.00;
         $this->user->status = 1;
         $this->user->url_count = 0;
         $this->user->record_count = 0;
         //用户登陆后自定义查询用户信息
         if(isset($this->user->id)&&!empty($this->user->id)){
-            //用户收益情况
-//            $userAaccount = User::get($this->user->id);
-//            if(!empty($userAaccount)){
-//                $this->user->account = number_format($userAaccount['account'],2);
-//                $this->user->freeze_money = number_format($userAaccount['freeze_money'],2);
-//                $this->user->wait_money = number_format($userAaccount['wait_money'],2);
-//            }
             //推广链接
             $urldata = [
                 'user_id' =>(int)$this->user->id,
             ];
             $promotionData = PromotionUrl::all($urldata);
+
             if(!empty($promotionData)){
                 $this->user->url_count = count($promotionData);
             }
@@ -280,6 +273,7 @@ class Index extends Controller
     {
         if ($this->request->isPost())
         {
+
             $oldpassword = $this->request->post("oldpassword");
             $newpassword = $this->request->post("newpassword");
             $ret = $this->auth->changepwd($newpassword, $oldpassword);
@@ -301,7 +295,71 @@ class Index extends Controller
                 $this->error($this->auth->getError());
             }
         }
-        return $this->view->fetch();
+        return $this->fetch();
     }
 
+    /**
+     * 查询推广详情
+     * @id 用户id
+     */
+    public function PromotionUrl()
+    {
+        //用户登陆后自定义查询用户信息
+        if (isset($this->user->id) && !empty($this->user->id)) {
+            //推广链接
+            $user_id = [
+                'user_id' => (int)$this->user->id,
+            ];
+            $PromotionData = Db::table('fa_promotion_url')
+                ->join("fa_archives", "fa_promotion_url.advert_id = fa_archives.id")
+                ->where($user_id)
+                ->paginate(10);
+            // 获取分页显示
+            $page = $PromotionData->render();
+
+            $this->assign('Data', $PromotionData->items());
+            $this->assign('page', $page);
+            return $this->fetch();
+        }
+    }
+
+    /*
+     * 删除推广记录
+     */
+    public function PromotionUrlDelete($id=''){
+        $advert_id=$_GET['id'];
+        //用户登陆后自定义查询用户信息
+        if (isset($this->user->id) && !empty($this->user->id)) {
+            //删除限制条件
+            $user_id = [
+                'user_id'  => (int)$this->user->id,
+                'advert_id'=>$advert_id
+            ];
+            $result = Db::table('fa_promotion_url')->where($user_id)->delete();
+            if ($result){
+                return $this->success('删除成功','/addons/user/index/PromotionUrl.html');
+            }
+        }
+
+    }
+    /**
+     * 查询推广记录
+     */
+    public function PromotionRecord(){
+        //用户登陆后自定义查询用户信息
+        if(isset($this->user->id)&&!empty($this->user->id)) {
+            //查询推广记录
+            $user_id = [
+                'user_id' => (int)$this->user->id
+            ];
+            $PromotionRecord = Db::table('fa_promotion_record')
+                ->join("fa_archives","fa_promotion_record.advert_id = fa_archives.id")
+                ->where($user_id)
+                ->paginate(10);
+
+            $this->assign('Data', $PromotionRecord);
+
+            return $this->fetch();
+        }
+    }
 }

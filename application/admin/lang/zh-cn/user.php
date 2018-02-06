@@ -25,5 +25,11 @@ return [
     'Createtime'                                  => '创建时间',
     'Updatetime'                                  => '更新时间',
     'Status'                                      => '状态',
-    'Leave password blank if dont want to change' => '不修改密码请留空'
+    'Leave password blank if dont want to change' => '不修改密码请留空',
+    'paymentmethod'                               => '支付方式',
+    'accountnumber'                               => '支付账号',
+    'realname'                                    => '真实姓名',
+    'wait_money'                                  => '待转账',
+    'account'                                     => '账户余额',
+    'freeze_money'                                => '冻结金额',
 ];

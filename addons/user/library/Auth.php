@@ -248,10 +248,10 @@ class Auth
                     $this->setError('Change password failure');
                 }
             }
-
             $salt = Random::alnum();
             $newpassword = $this->getEncryptPassword($newpassword, $salt);
             $this->_user->save(['password' => $newpassword, 'salt' => $salt]);
+
             return true;
         }
         else
