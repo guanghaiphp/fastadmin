@@ -68,8 +68,8 @@ class Index extends PromotionBase
                 //添加推广记录  promotionRecode
                 $addRecord = PromotionRecord::create($data);
                 //根据广告推广收益 添加推广人金额
-                $userAccount = new UserAccount();
-                $addAccount = $userAccount->where('user_id','=',$userId)->setInc('account',$advertData['prices']);
+                $userAccount = new User();
+                $addAccount = $userAccount->where('id','=',$userId)->setInc('account',$advertData['prices']);
                 if(!$addAccount||!$addRecord){
                     Db::rollback();
                 }else{
