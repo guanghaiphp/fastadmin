@@ -25,14 +25,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'user_id', title: __('User_id')},
+                        {field: 'user.username', title: __('username')},
+                        {field: 'archives.title', title: __('title')},
                         {field: 'type', title: __('Type')},
                         {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
                         {field: 'money', title: __('Money')},
                         {field: 'create_time', title: __('Create_time'), formatter: Table.api.formatter.datetime},
                         {field: 'update_time', title: __('Update_time'), formatter: Table.api.formatter.datetime},
                         {field: 'create_ip', title: __('Create_ip')},
-                        {field: 'advert_id', title: __('Advert_id')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

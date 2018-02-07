@@ -39,6 +39,7 @@ class Index extends Controller
         $this->auth->init();
         $this->user = $this->auth->getModel();
         $this->user->status = 1;
+//        $this->user->url_count = 0;
 //        $this->user->record_count = 0;
         //用户登陆后自定义查询用户信息
         if(isset($this->user->id)&&!empty($this->user->id)){
@@ -48,17 +49,17 @@ class Index extends Controller
             ];
             $promotionData = PromotionUrl::all($urldata);
 
-           /* if(!empty($promotionData)){
-                $this->user->url_count = count($promotionData);
-            }*/
+//            if(!empty($promotionData)){
+//                $this->user->url_count = count($promotionData);
+//            }
             //收益详情
             $recordData = [
                 'user_id' =>(int)$this->user->id,
             ];
             $recordata = PromotionRecord::all($recordData);
-            /*if(!empty($recordata)){
-                $this->user->record_count = count($recordata);
-            }*/
+//            if(!empty($recordata)){
+//                $this->user->record_count = count($recordata);
+//            }
         }
         $this->view->assign('user', $this->user);
 

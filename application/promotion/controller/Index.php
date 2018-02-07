@@ -78,8 +78,9 @@ class Index extends PromotionBase
             }
             //跳转到被推广产品网址
             echo "<script>window.location.href='".$advertData['url']."'</script>";
-//            $this->redirect($urlData['url']);
-            //跳转到被推广产品网址
+
+
+
         }
     }
 

@@ -25,8 +25,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'user_id', title: __('User_id')},
-                        {field: 'advert_id', title: __('Advert_id')},
+                        {field: 'user.username', title: __('username')},
+                        {field: 'archives.title', title: __('title')},
                         {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
                         {field: 'promotion_url', title: __('Promotion_url')},
                         {field: 'create_time', title: __('Create_time'), formatter: Table.api.formatter.datetime},

@@ -21,11 +21,18 @@ class PromotionRecord extends Model
         'create_time_text',
         'update_time_text'
     ];
-    
-
-    
 
 
+
+
+    public function user()
+    {
+        return $this->belongsTo('User', 'user_id')->setEagerlyType(0);
+    }
+    public function archives()
+    {
+        return $this->belongsTo('Archives', 'advert_id')->setEagerlyType(0);
+    }
 
     public function getCreateTimeTextAttr($value, $data)
     {
