@@ -34,6 +34,8 @@ class PromotionUrl extends Model
         return $this->belongsTo('Archives', 'advert_id')->setEagerlyType(0);
     }
 
+
+
     public function getCreateTimeTextAttr($value, $data)
     {
         $value = $value ? $value : $data['create_time'];

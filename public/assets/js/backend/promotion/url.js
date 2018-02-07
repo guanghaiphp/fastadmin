@@ -25,9 +25,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'user.username', title: __('username')},
-                        {field: 'archives.title', title: __('title')},
+                        {field: 'user.username', title: __('Username')},
+                        {field: 'archives.title', title: __('advert name')},
                         {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
+                        {field: 'status', title: __('Status'), formatter: function (value) {
+                            return value == '1' ? __('Normal') : __('advert fail');
+                        }},
                         {field: 'promotion_url', title: __('Promotion_url')},
                         {field: 'create_time', title: __('Create_time'), formatter: Table.api.formatter.datetime},
                         {field: 'update_time', title: __('Update_time'), formatter: Table.api.formatter.datetime},
